@@ -327,9 +327,16 @@ function checkFunction() {
 
 function myFunction() {
   var vidLink = prompt("Please enter the YouTube video link:", "");
-  
+  if (input === null) {
+        return; //break out of the function early
+ if (vidLink != null) {
+    var vidEmbed = vidLink.replace("watch?v=", "embed/");
+  if (vidLink == null) {
+    var vidEmbed = vidLink.replace("");
+    document.getElementById('video').src += '';
+
   var vidEmbed = vidLink.replace("watch?v=", "embed/");
-  
+
   }
 
     // alert("The original link is: " + vidLink)
