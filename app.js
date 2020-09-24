@@ -327,7 +327,7 @@ function checkFunction() {
 
 function myFunction() {
   var vidLink = prompt("Please enter the YouTube video link:", "");
-  if (vidLink != null) {
+  if (vidLink == vidLink) {
     var vidEmbed = vidLink.replace("watch?v=", "embed/");
  // if (vidLink == null) {
  //   var vidEmbed = vidLink.replace("");
