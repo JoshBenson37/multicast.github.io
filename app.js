@@ -329,13 +329,13 @@ function myFunction() {
   var vidLink = prompt("Please enter the YouTube video link:", "");
   if (vidLink != null) {
     var vidEmbed = vidLink.replace("watch?v=", "embed/");
-  if (vidLink == null) {
-    var vidEmbed = vidLink.replace("");
-    document.getElementById('video').src += '';
+ // if (vidLink == null) {
+ //   var vidEmbed = vidLink.replace("");
+ //   document.getElementById('video').src += '';
 
   var vidEmbed = vidLink.replace("watch?v=", "embed/");
 
-  }
+ // }
 
     // alert("The original link is: " + vidLink)
     // alert("The embed link is: " + vidEmbed)
