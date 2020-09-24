@@ -1,0 +1,169 @@
+// VIDEO ELEMENT
+#container {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #333 solid;
+}
+#videoElement {
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+}
+
+#videoElementMirrored {
+    width: 100%;
+	  height: 100%;
+	  background-color: #666;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+#settings {
+  height: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px
+}
+
+#mirrorV1 {
+  transform: scale(0);
+  transform: translate(-999px, 0px)
+}
+
+#videoC {
+  font-family: "Arial"
+}
+
+// SLIDESHOW ELEMENT
+#slideshow {
+  width: 100%;
+  height: 100%;
+  
+}
+
+html, body { height: 100%; padding: 0; margin: 0; }
+
+
+#divider {
+  font-size: 30px;
+}
+
+ #vidID {
+  background-color: #00a9e2;
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.2s;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+#slide {
+  background-color: #00a9e2;
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.openButton1 {
+  background-color: #00a9e2;
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+#header {
+  height: 6%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px
+}
+
+#header {
+  height: 6%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px
+}
+
+
+#div1 { background: #DDD;
+width: 50%; height: 46.9%; float: left;} 
+#div2 { background: #AAA;
+width: 50%; height: 46.9%; float: left;}
+#div3 { background: #777; 
+width: 50%; height: 46.9%; float: left;}
+#div4 { background: rgb(255, 255, 255); 
+width: 50%; height: 46.9%; float: left;
+}
+
+#div1-1 { background: #DDD;
+width: 100%; height: 46.9%; float: left; }
+
+#div2-1 { background: #DDD;
+width: 100%; height: 46.9%; float: left; }
+
+
+
+// Buttons
+
+#button {
+  background-color: rgb(26, 116, 245); /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#button:hover{
+  background-color: #4CAF50;
+  color: white;
+}
+
+#fullscreenToggle {
+  background-color: rgb(26, 116, 245); /* Green */
+  border: none;
+  color: white;
+  padding: 2.5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+// WHITEBOARD
+
+

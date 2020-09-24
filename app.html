@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+
+
+	<script src="app.js">
+
+	</script>
+
+	<div class="header" id="header">
+
+    
+	
+    
+    <!-- CHECKBOXES -->
+
+    <button class="openButton1" open onclick=location.href="index.html";> « Back </button>
+ 
+    <button onclick="myFunction()" id= "vidID" id="button" class="3button" >Enter Video Link</button>
+
+      <button onclick="slideFunction()" id= "slide" class="3button">Enter Google Slide Embed Link</button>
+    
+    
+    <input type="checkbox" id="videoC" onclick="checkFunction()" value="Video" checked=""> YouTube
+
+    <input type="checkbox" id="webcamC" onclick="checkFunction()" value="Webcam" checked=""> Video
+
+    <input type="checkbox" id="slideshowC" onclick="checkFunction()" value="Slideshow" checked=""> Slideshow
+
+    <input type="checkbox" id="whiteboardC" onclick="checkFunction()" value="Whiteboard" checked=""> Whiteboard
+
+    
+
+    <label id="divider">  |  </label>
+
+      
+
+
+      <input type="checkbox" id="mirrorV" onclick="mirrorFunction()" value="Mirror" > Mirror Video
+    
+      <input type="checkbox" id="fullscreenToggle" onclick="toggleFullScreen()" value="Toggle Fullscreen"> Fullscreen
+
+<!--
+      <input type="checkbox" id="setting" onclick="toggleFunction()" value="Toggle"> Show Options
+
+      <div id="settings">
+    <input type="checkbox" id="mirrorV" onclick="mirrorFunction()" value="Mirror" > Mirror Video
+-->
+    
+
+      
+
+  
+  </div>
+  </div>  
+	</div>
+  </div>
+</div>
+  
+	</div>
+  
+    
+    <div id="div1">
+
+      
+        
+
+        <iframe width="100%" height="100%" src= "" id= "video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script src="script.js"></script>
+    </div>
+    
+    
+    
+    <div id="div2">
+      
+	<video autoplay="true" id="videoElement">
+	
+	</video>
+
+<script>
+  var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+
+</script>
+    </div>
+    
+    
+    <div id="div3">
+      <iframe width="100%" height="100%"
+      src="" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+      id="slideshow"></iframe>
+    </div>
+    
+    
+    
+    <div id="div4">
+      	<iframe id="iframeid" height="100%" width="100%" src="whiteboard.html" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    </div>
+
+
+
+
+  </body>
+</html>

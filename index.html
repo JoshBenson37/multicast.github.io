@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Multicast</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo" href="#home">
+              <img src="multicast.png" alt="repl logo" />
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link active" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#projects">Features</a></li>
+      <li><a class="nav-link" href="#contact">How to Use</a></li>
+      <li><a class="nav-link" href="form.html">Feedback</a></li>
+      <li><a class="nav-link" href="app.html">Open Multicast</a></li>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+       <p> </p>
+       <br>
+       <br>
+		  <h3>Multicast<hr></h3>
+		  <p>The 100% free all-in-one web app</p>
+		  <p>for sharing presentations, videos and more over</p>
+          <p>Zoom, Google Meet, Webex, Microsoft Teams and other online meeting software</p>
+			  
+		  <!--────social media links─────-->
+			 
+       <center>
+       <button class="openButton" onclick=location.href='app.html';  open> Open » </button>
+       </center>
+       <br>
+       <button class="openButton1"  open onclick=location.href="#projects";> Features » </button>
+       <button class="openButton1"  open onclick=location.href="#contact";> How to use » </button>
+       
+		  <div class="social-media">
+
+  
+
+        
+        
+			  
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>Features<hr></h3>
+		  <p>Multicast is 100% free - the free version is the full version!</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="cam.png">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Share you webcam</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="https://s.clipartkey.com/mpngs/s/282-2828314_transparent-google-drive-logo-png-google-slides-logo.png">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Share Google Slides presentations</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="https://cdn.pixabay.com/photo/2020/03/19/13/58/youtube-4947559_960_720.jpg">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Share YouTube videos</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="whiteboard.png">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Draw on and share virtual whiteboard</div></a>
+            </div> 
+			<div class="card">
+			    <img class="work-img" src="one.png">
+				<a id="myBtn" target="_blank"> <!--Link to project-->
+				<div class="work-content">16 different layouts</div></a>
+            </div>
+			<div class="card">
+			    <img class="image" src="file2.png" id="myModal1">
+			 <!--Link to project-->
+				<div class="work-content" onclick="pop6()">Mirror video, Fullscreen mode, and more!</div></a>
+            </div> 	  
+		  </div>
+		  </div>
+	  </div>
+		 
+
+<script>
+function pop6() {
+  var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+  myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+}
+</script>
+
+
+
+		<!--──────────────Contact───────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>How to use<hr></h3>
+		   <p>Please watch this video to learn how to use Multicast.</p>
+		    
+        <video class="videoStyle" width="500px" controls>
+  <source id="howToVideo" class="videoStyle" src="multicast_video.mov" type="video/mp4">
+Please use a supported browser such as Chrome, Firefox, Edge or Safari.
+</video>
+
+<p class="links"> How to share your screen on: </p>
+
+<a href="https://support.zoom.us/hc/en-us/articles/201362153-Sharing-your-screen" class="links">Zoom</a>
+
+<a href="https://support.google.com/meet/answer/9308856?co=GENIE.Platform%3DDesktop&hl=en" class="links">Google Meet</a>
+
+<a href="https://support.microsoft.com/en-us/office/show-your-screen-during-a-meeting-90c84e5a-b6fe-4ed4-9687-5923d230d3a7" class="links">Microsoft Teams</a>
+
+<a href="https://help.webex.com/en-us/i62jfl/Share-Your-Screen-or-Application-in-a-Cisco-Webex-Teams-Meeting" class="links"> Cisco Webex </a>
+
+<br>
+<br>
+<br>
+
+		    </div>
+		  </div id="footStyle">
+      </main>
+	  <!-- <footer class="copyright">© 2020 
+		  <a href="https://repl.it/@lilykhan" target="_blank"> Lilykhan.</a>
+     </footer> -->
+ 
+ 
+	</main>
+	  <footer id="footLink" class="copyright">© 2020 
+		  <a href="" target="_blank"></a> 
+            <br>
+      <p> Multicast v0.90 </p>
+            <p> --- </p>
+      <a href="patchnotes.html" class="footStyle" target="_blank"> Patch Notes / Changelogs</a>
+            <br>
+      <a href="app.html" class="footStyle" target="_blank"> Open Multicast</a>
+            <br>
+      <a href="about.html" class="footStyle" target="_blank"> About</a>
+            <br>
+      <a href="form.html" class="footStyle" target="_blank"> Reporting Glitches / Feedback / Suggestions</a>
+     </footer>
+	  
+  </div>
+
+
+<!--
+
+
+
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1> 16 different layouts </h1>
+    <img width="70%" src="boxes.png">
+    <p>Multicast has 16 possible layouts. You can select which layout you want by selecting some combination of the checkboxes at the top. Multicast will automatically asjust the width and height of the boxes to fill up the entire screen.</p>
+    
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+-->
+
+  </body>
+</html>
