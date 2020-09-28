@@ -129,6 +129,7 @@ body {
 <script>
 function openNav() {
   var msg2 = document.getElementById("lname").value
+  msg2.replace("||","<br> <br>")
   document.getElementById("msg1").innerHTML = msg2
   document.getElementById("myNav").style.width = "100%";
 }
