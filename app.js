@@ -5,7 +5,7 @@
 var count = 0
 var vidEmbed = ""
 var vidLink = ""
-var hash = "#header"
+var hash = "header"
 
 
 function scrollTo(hash) {
