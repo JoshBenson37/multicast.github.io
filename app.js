@@ -5,6 +5,28 @@
 var count = 0
 var vidEmbed = ""
 var vidLink = ""
+var hash = "#header"
+
+
+function scrollTo(hash) {
+    location.hash = "#" + hash;
+}
+
+scrollTo()
+
+function sc() {
+  var scInput = prompt("Please enter the SoundCloud song link")
+
+  var scLink = "https://w.soundcloud.com/player/?url=!";
+  var scOutput = scLink.concat(scInput);
+  document.getElementById("scEmbed").src = scOutput
+}
+
+window.onkeypress = function(event) {
+   if (event.keyCode == 171) {
+    document.getElementById("videoC").checked = true;
+   }
+}
 
 
 function toggleFullScreen() {
