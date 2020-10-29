@@ -9,10 +9,22 @@
 	<link href="app.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body onload="scrollTo(hash)">
 
+<p> <strong> Multicast Options: </strong> (Scroll down to hide) </p>
 
+<div style="padding:5px;">
+<input class="top2" type="text" placeholder="Message..." autocomplete="off" id="lname" name="lname">
+<input class="top2" type="submit" id="msg1" onclick="openNav()" value="Show">
 
+<input class="top2" type="checkbox" id="mirrorV" onclick="mirrorFunction()" value="Mirror"> Mirror Video </input>
+    
+<input class="top2" type="checkbox" id="fullscreenToggle" onclick="toggleFullScreen()" value="Toggle Fullscreen"> Fullscreen </input>
+</div>
+
+<button class="top" onclick="sc()" style="height:98px;width:50px">  Enter Song Link </button>
+
+<iframe id="scEmbed" width="50%" height="100px" src="https://w.soundcloud.com/player/?url="> </iframe>
 
 	<script src="app.js">
 
@@ -30,7 +42,7 @@
     <button onclick="myFunction()" id= "vidID" id="button" class="3button" >Enter Video Link</button>
 
       <button onclick="slideFunction()" id= "slide" class="3button">Enter Google Slide Embed Link</button>
-    
+
     
     <input type="checkbox" id="videoC" onclick="checkFunction()" value="Video" checked=""> YouTube
 
@@ -40,19 +52,10 @@
 
     <input type="checkbox" id="whiteboardC" onclick="checkFunction()" value="Whiteboard" checked=""> Whiteboard
 
+
+
+
     
-
-    <label id="divider">  |  </label>
-
-      
-
-
-      <input type="checkbox" id="mirrorV" onclick="mirrorFunction()" value="Mirror" > Mirror Video
-    
-      <input type="checkbox" id="fullscreenToggle" onclick="toggleFullScreen()" value="Toggle Fullscreen"> Fullscreen
-
-
-	<label id="divider">  |  </label>
 		
 	<style>
 body {
@@ -123,8 +126,7 @@ body {
 
 
 
-<input type="text" placeholder="Message..." autocomplete="off" id="lname" name="lname">
-  <input type="submit" id="msg1" onclick="openNav()" value="Show">
+
 
 <script>
 function openNav() {
