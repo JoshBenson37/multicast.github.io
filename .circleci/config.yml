@@ -1,12 +1,14 @@
 version: 2.1
 jobs:
-  build:
+  build_windows:
     working_directory: ~/repo
     docker:
       - image: circleci/node:11
     steps:
       - checkout
       - run:
+      - store_artifacts:
+          path: /root/project/build
           name: Update NPM
           command: "sudo npm install -g npm"
       - restore_cache:
