@@ -14,7 +14,7 @@
 <p> <strong> Multicast Options: </strong> (Scroll down to hide) </p>
 
 <div style="padding:5px;">
-<input class="top2" type="text" placeholder="Message..." autocomplete="off" id="lname" name="lname">
+<input class="top2" type="text" placeholder="Message..." autocomplete="off" id="msgBox" name="lname">
 <input class="top2" type="submit" id="msg1" onclick="openNav()" value="Show">
 
 <input class="top2" type="checkbox" id="mirrorV" onclick="mirrorFunction()" value="Mirror"> Mirror Video </input>
@@ -130,9 +130,9 @@ body {
 
 <script>
 function openNav() {
-  var msg2 = document.getElementById("lname").value
+  var finalMsg = document.getElementById("msgBox").value
   
-  document.getElementById("msg2").innerHTML = msg1
+  document.getElementById("msg1").innerHTML = finalMsg;
   document.getElementById("myNav").style.width = "100%";
 }
 
